@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Background Color</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      #color {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 300px;
+      }
+      .button {
+        margin-left: 20px;
+        height: 30px;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="color" placeholder="ENTER THE COLOUR" />
+    <button onclick="change()" class="button">Change Color</button>
+
+    <script>
+      function change() {
+        const colorInput = document.getElementById("color").value;
+        document.body.style.backgroundColor = colorInput;
+      }
+    </script>
+  </body>
+</html>
